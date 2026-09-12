@@ -4,7 +4,7 @@
 
 The tool inspects a local plan and emits curated resource/action findings, not raw before/after data. It combines deterministic risk heuristics with retrieved change runbooks and optional LLM review guidance.
 
-Original project created for **Anil Kumar Tangirala**. Python 3.11+; no runtime package dependencies. Version 0.1 is a runnable reference implementation with synthetic examples, not a claim of production deployment.
+**Owner and maintainer: [Anil Kumar Tangirala](https://github.com/anil7000).** Developed with AI assistance. Python 3.11+; no runtime package dependencies. Version 0.1 is a runnable reference implementation with synthetic examples, not a claim of production deployment.
 
 ## Problem it solves
 
