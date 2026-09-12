@@ -1,0 +1,43 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.9.0",
+  "complete": true,
+  "errored": false,
+  "resource_changes": [
+    {
+      "address": "aws_db_instance.demo",
+      "type": "aws_db_instance",
+      "change": {
+        "actions": [
+          "delete",
+          "create"
+        ],
+        "before": {
+          "deletion_protection": true
+        },
+        "after": {
+          "deletion_protection": false
+        },
+        "after_unknown": {
+          "endpoint": true
+        }
+      }
+    },
+    {
+      "address": "aws_vpc_security_group_ingress_rule.demo",
+      "type": "aws_vpc_security_group_ingress_rule",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "cidr_ipv4": "0.0.0.0/0",
+          "from_port": 5432,
+          "to_port": 5432,
+          "ip_protocol": "tcp"
+        }
+      }
+    }
+  ]
+}

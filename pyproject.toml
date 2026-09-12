@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "change-risk-rag"
+version = "0.1.0"
+description = "Evidence-grounded advisory tooling for operations"
+requires-python = ">=3.11"
+authors = [{name = "Anil Kumar Tangirala"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+change-risk-rag = "opsrag.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["opsrag*"]
